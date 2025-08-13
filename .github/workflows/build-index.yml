@@ -1,4 +1,4 @@
-name: Build captions index from SRTs
+name: Build captions index from SRTsv2
 
 permissions:
   contents: write
@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -19,6 +23,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      - name: Install ffmpeg (needed for some subtitle conversions)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
 
       - name: Install tools
         run: |
@@ -46,35 +55,33 @@ jobs:
         env:
           YT_HANDLE: "@blackoutapp"
         run: python scripts/build_index_from_srt.py
-# keep the earlier steps the same (checkout, build, etc.)
 
-- name: Configure git identity
-  run: |
-    git config user.name "github-actions[bot]"
-    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      # 4) Configure git and push update safely
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-# Pull latest before committing so we never get non-fast-forward
-- name: Rebase onto latest main
-  run: |
-    git fetch origin ${{ github.ref_name }}
-    git pull --rebase origin ${{ github.ref_name }}
+      - name: Rebase onto latest
+        run: |
+          git fetch origin ${{ github.ref_name }}
+          git pull --rebase origin ${{ github.ref_name }}
 
-- name: Commit & push (with retry)
-  run: |
-    set -e
-    git add public/index.json
-    if git diff --cached --quiet; then
-      echo "No changes"
-      exit 0
-    fi
-    git commit -m "Update transcript index"
-    # Try push; if someone pushed meanwhile, rebase and retry up to 3x
-    for i in 1 2 3; do
-      if git push origin HEAD:${{ github.ref_name }}; then
-        exit 0
-      fi
-      echo "Push failed (attempt $i). Rebasing and retrying..."
-      git pull --rebase origin ${{ github.ref_name }}
-    done
-    echo "Push failed after retries"
-    exit 1
+      - name: Commit & push (with retry)
+        run: |
+          set -e
+          git add public/index.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update transcript index"
+          for i in 1 2 3; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              exit 0
+            fi
+            echo "Push failed (attempt $i). Rebasing and retrying..."
+            git pull --rebase origin ${{ github.ref_name }}
+          done
+          echo "Push failed after retries"
+          exit 1
