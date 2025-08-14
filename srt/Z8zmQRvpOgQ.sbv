@@ -1,0 +1,431 @@
+0:00:00.250,0:00:01.458
+Hey everyone, today we're going to be
+
+0:00:01.458,0:00:02.916
+talking about the brand new
+
+0:00:02.916,0:00:06.041
+encoder page in Blackout 2.4.
+
+0:00:06.041,0:00:07.791
+Now this is a big update for us. We
+
+0:00:07.791,0:00:09.333
+debuted at Cinegear and as
+
+0:00:09.333,0:00:10.458
+you probably already know,
+
+0:00:10.541,0:00:12.666
+we also launched the Astera integration.
+
+0:00:13.166,0:00:14.166
+I'm not going to cover that
+
+0:00:14.166,0:00:15.791
+here because Jeff made a great
+
+0:00:15.791,0:00:17.875
+full walkthrough, so check his video out.
+
+0:00:17.875,0:00:18.500
+The link will be in the
+
+0:00:18.500,0:00:19.833
+description. Today I'm going
+
+0:00:19.833,0:00:21.583
+to be talking about the other feature we
+
+0:00:21.583,0:00:23.208
+introduced, which is the brand new
+
+0:00:23.208,0:00:25.000
+encoder page and Stream Deck
+
+0:00:25.000,0:00:26.833
+integration. So we're here in Blackout
+
+0:00:26.833,0:00:27.875
+and you'll see down at the
+
+0:00:27.875,0:00:28.958
+bottom I have the brand new
+
+0:00:28.958,0:00:31.333
+encoders tab. The encoder tab is
+
+0:00:31.333,0:00:32.250
+available if you've
+
+0:00:32.250,0:00:33.750
+purchased the MIDI upgrade, which is
+
+0:00:33.750,0:00:35.708
+available for both our subscription users
+
+0:00:35.708,0:00:37.125
+and our perpetual license
+
+0:00:37.125,0:00:39.000
+users as an additional add-on.
+
+0:00:39.541,0:00:41.291
+So once you've purchased the MIDI add-on,
+
+0:00:41.291,0:00:42.125
+you'll see your encoder
+
+0:00:42.125,0:00:43.458
+tab down here at the bottom.
+
+0:00:44.000,0:00:46.166
+I can click on it and I'm taken to this
+
+0:00:46.166,0:00:47.791
+blank encoder page. And here
+
+0:00:47.791,0:00:49.500
+you can set up per parameter
+
+0:00:49.583,0:00:51.750
+encoder so you can grab one fixture or
+
+0:00:51.750,0:00:53.541
+multiple fixtures and adjust
+
+0:00:53.541,0:00:55.166
+the same parameter on all of
+
+0:00:55.208,0:00:58.041
+them. So here's how to set that up. I can
+
+0:00:58.041,0:00:59.000
+come up here and click
+
+0:00:59.000,0:01:00.958
+edit and you'll see all the
+
+0:01:00.958,0:01:02.666
+encoders change and allow me to pick
+
+0:01:02.666,0:01:04.291
+their parameter. So I'll
+
+0:01:04.291,0:01:05.208
+come over here to the first
+
+0:01:05.208,0:01:08.166
+one and make this intensity. I'll come
+
+0:01:08.166,0:01:09.333
+over to this one and
+
+0:01:09.333,0:01:10.291
+make a color temperature.
+
+0:01:11.041,0:01:13.000
+I'll come over to this one. I'll make it
+
+0:01:13.000,0:01:14.958
+crossfade and I'll come over
+
+0:01:14.958,0:01:16.000
+to this one and make it tint.
+
+0:01:16.541,0:01:18.000
+That's all I need for now. So I'll go
+
+0:01:18.000,0:01:18.791
+ahead and click save.
+
+0:01:18.791,0:01:23.166
+And if you look at the top, we also have
+
+0:01:23.166,0:01:24.791
+pages in our encoders tab,
+
+0:01:25.000,0:01:26.375
+just like in the faders tab.
+
+0:01:26.875,0:01:28.666
+So here you can have up to a hundred
+
+0:01:28.666,0:01:32.375
+available encoders. If I click in the
+
+0:01:32.375,0:01:33.458
+center of an encoder,
+
+0:01:33.458,0:01:35.666
+I can change it from fine, super fine and
+
+0:01:35.666,0:01:37.166
+coarse. Definitely like to
+
+0:01:37.166,0:01:38.291
+keep color temperature on
+
+0:01:38.291,0:01:40.583
+coarse. So you can select different
+
+0:01:40.583,0:01:41.958
+adjustment levels for
+
+0:01:41.958,0:01:43.916
+different encoders. At the bottom,
+
+0:01:44.000,0:01:45.875
+you can send an encoder to its minimum,
+
+0:01:46.291,0:01:48.916
+its maximum, and its home. And of course,
+
+0:01:49.125,0:01:51.125
+all of these buttons are MIDI learnable.
+
+0:01:51.416,0:01:52.125
+Pro tip, but you can
+
+0:01:52.125,0:01:53.291
+actually MIDI learn the
+
+0:01:53.291,0:01:55.083
+MIDI learn button. So it makes mapping
+
+0:01:55.083,0:01:56.333
+out your encoders even
+
+0:01:56.333,0:01:57.833
+faster because with the click of a
+
+0:01:57.833,0:02:00.833
+button, I can be in MIDI learn mode. To
+
+0:02:00.833,0:02:01.916
+set that up, go into link
+
+0:02:01.916,0:02:03.541
+status, connect to device,
+
+0:02:04.083,0:02:05.958
+and click MIDI learn. And you'll see I
+
+0:02:05.958,0:02:07.666
+can click MIDI learn again to map it.
+
+0:02:08.416,0:02:10.291
+I have it mapped to my stream deck, which
+
+0:02:10.291,0:02:11.166
+I'll show you in a minute.
+
+0:02:11.583,0:02:13.291
+So now that I'm in MIDI learn,
+
+0:02:13.541,0:02:15.625
+all I have to do is click on an encoder.
+
+0:02:16.041,0:02:16.875
+And then I just have to
+
+0:02:16.875,0:02:18.791
+twist an infinite encoder on my
+
+0:02:18.791,0:02:20.666
+MIDI device that I want to map there. If
+
+0:02:20.666,0:02:21.833
+I click in the center, I
+
+0:02:21.833,0:02:23.625
+can map the adjustment level,
+
+0:02:24.708,0:02:28.083
+as well as the minimum, home, and max
+
+0:02:28.083,0:02:30.833
+buttons. Now back in the
+
+0:02:30.833,0:02:32.416
+fixture page, all I have to do
+
+0:02:32.500,0:02:35.750
+is grab a bunch of fixtures. And as I
+
+0:02:35.750,0:02:37.000
+move the encoder, the
+
+0:02:37.000,0:02:39.833
+intensity changes. Of course,
+
+0:02:39.833,0:02:44.041
+this works for tint and color
+
+0:02:44.041,0:02:46.250
+temperature. You'll also see
+
+0:02:46.250,0:02:47.458
+at the top of each encoder,
+
+0:02:47.458,0:02:49.291
+it gives you a readout of the level you
+
+0:02:49.291,0:02:50.416
+set. So that's the encoder
+
+0:02:50.416,0:02:51.791
+page. Let's check out this
+
+0:02:51.833,0:02:54.416
+other tab for our stream deck. Stream
+
+0:02:54.416,0:02:56.416
+decks come with a USB A plug.
+
+0:02:56.416,0:02:57.708
+So you'll need a hub that has
+
+0:02:57.708,0:03:00.500
+a USB A port to plug into your iPad. The
+
+0:03:00.500,0:03:01.250
+first time you connect
+
+0:03:01.250,0:03:02.500
+your stream deck, you'll need
+
+0:03:02.500,0:03:04.458
+to go to the app store and you'll need to
+
+0:03:04.458,0:03:07.000
+download SD connect. All you
+
+0:03:07.000,0:03:08.458
+have to do is open the app and
+
+0:03:08.500,0:03:10.333
+follow the prompts. And then once you've
+
+0:03:10.333,0:03:12.208
+set that up, you just need to keep SD
+
+0:03:12.208,0:03:13.333
+connect on your iPad
+
+0:03:13.500,0:03:15.416
+and you never have to do anything with it
+
+0:03:15.416,0:03:16.666
+again. You never have to
+
+0:03:16.666,0:03:18.125
+open it again. You just have to
+
+0:03:18.125,0:03:19.666
+allow the permissions once and then
+
+0:03:19.666,0:03:20.791
+you're done. Now back in
+
+0:03:20.791,0:03:22.291
+blackout in the stream deck page,
+
+0:03:22.416,0:03:24.583
+this is where we can configure how the
+
+0:03:24.583,0:03:25.875
+buttons look right in
+
+0:03:25.875,0:03:28.041
+blackout. So you'll see, I already
+
+0:03:28.041,0:03:30.291
+have mine set up, but you can just click
+
+0:03:30.291,0:03:32.250
+on a button. You can change the
+
+0:03:32.250,0:03:33.750
+background to any color
+
+0:03:33.750,0:03:36.458
+you want. You can click here and change
+
+0:03:36.458,0:03:38.666
+it to an icon and you
+
+0:03:38.666,0:03:40.208
+can even give icons colors.
+
+0:03:41.208,0:03:43.625
+So I don't know, make that blue. And then
+
+0:03:43.625,0:03:45.250
+down here you can change the text.
+
+0:03:49.833,0:03:50.500
+And then up here you
+
+0:03:50.500,0:03:51.625
+can change the text color.
+
+0:03:55.833,0:03:57.333
+Once you've set up the appearance of the
+
+0:03:57.333,0:03:58.458
+buttons the way you want,
+
+0:03:58.458,0:03:59.500
+all you have to do is press
+
+0:03:59.541,0:04:01.333
+midi learn and learn the buttons to
+
+0:04:01.333,0:04:02.291
+whatever you want them to
+
+0:04:02.291,0:04:04.041
+correspond to. So here I can click
+
+0:04:04.041,0:04:05.958
+a macro and learn it right to the stream
+
+0:04:05.958,0:04:08.500
+deck. Coming soon are
+
+0:04:08.500,0:04:10.208
+stream deck pages and support
+
+0:04:10.208,0:04:11.708
+for different models of stream deck.
+
+0:04:12.041,0:04:13.458
+That's pretty much it. Not a lot of
+
+0:04:13.458,0:04:14.625
+explaining to do because
+
+0:04:14.625,0:04:17.000
+it's so intuitive and easy to set up the
+
+0:04:17.000,0:04:18.208
+stream deck and your
+
+0:04:18.208,0:04:20.125
+encoders page. If you like using
+
+0:04:20.125,0:04:21.583
+hardware with blackout, you're going to
+
+0:04:21.583,0:04:23.291
+love this update. As always,
+
+0:04:23.291,0:04:24.000
+let me know in the comments
+
+0:04:24.083,0:04:25.250
+what you want to see more of
+
+0:04:25.250,0:04:26.208
+and I'll see you next time.
