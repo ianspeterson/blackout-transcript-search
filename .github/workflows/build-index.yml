@@ -1,0 +1,41 @@
+name: Build public transcript index
+
+on:
+  workflow_dispatch:      # <-- makes the "Run workflow" button appear
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install youtube-transcript-api requests
+
+      - name: Build index.json (public transcripts)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_HANDLE: "@blackoutapp"
+        run: python scripts/build_index_from_api_transcripts.py
+
+      - name: Commit & push index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p public
+          git add public/index.json
+          git commit -m "Update transcript index" || exit 0
+          git push
