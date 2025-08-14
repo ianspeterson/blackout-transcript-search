@@ -1,7 +1,0 @@
-- name: Build index.json (public transcripts)
-  env:
-    YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-    YOUTUBE_HANDLE: "@blackoutapp"
-  run: |
-    pip install youtube-transcript-api requests
-    python scripts/build_index_from_api_transcripts.py
