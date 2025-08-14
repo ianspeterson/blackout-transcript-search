@@ -1,4 +1,4 @@
-name: Build captions index from SRTsv2
+name: Build captions index from SRTsv3
 
 permissions:
   contents: write
@@ -37,26 +37,61 @@ jobs:
       - name: Prepare dirs
         run: mkdir -p captions public
 
-      # 1) Download YOUR uploaded English captions as SRT (no auto-captions)
-      - name: Download uploaded SRT captions
+      # -------- cookies (REQUIRED) --------
+      - name: Write cookies file (required)
         run: |
-          yt-dlp -i --skip-download \
+          if [ -z "${{ secrets.YTDLP_COOKIES }}" ]; then
+            echo "❌ Missing YTDLP_COOKIES secret"; exit 1
+          fi
+          printf "%s" "${{ secrets.YTDLP_COOKIES }}" > cookies.txt
+          BYTES=$(wc -c < cookies.txt || echo 0)
+          if [ "$BYTES" -lt 100 ]; then
+            echo "❌ cookies.txt looks too small ($BYTES bytes). Re-export in Netscape format."; exit 1
+          fi
+          head -n 1 cookies.txt | grep -q 'Netscape' || echo "⚠️ cookies.txt may not be in Netscape format"
+
+      # -------- download captions (manual first, then auto fallback) --------
+      - name: Download uploaded SRT captions (manual)
+        run: |
+          set -euxo pipefail
+          yt-dlp -v -i --skip-download --force-ipv4 \
+            --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" \
+            --cookies cookies.txt \
+            --extractor-args "youtube:player_client=web" \
             --write-sub --sub-langs "en,en-US,en.*" \
             --convert-subs srt --no-overwrites \
+            --sleep-requests 0.4 --retries 10 --retry-sleep 2 \
             -o "captions/%(id)s.%(ext)s" \
-            "https://www.youtube.com/@blackoutapp"
+            "https://www.youtube.com/playlist?list=UUbRF6gtkzmbSOtcM6Jq4ANw"
 
-      # 2) Export IDs+titles for mapping
+      - name: Download AUTO captions fallback
+        run: |
+          set -euxo pipefail
+          yt-dlp -v -i --skip-download --force-ipv4 \
+            --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" \
+            --cookies cookies.txt \
+            --extractor-args "youtube:player_client=web" \
+            --write-auto-sub --sub-langs "en,en-US,en.*" \
+            --convert-subs srt --no-overwrites \
+            --sleep-requests 0.4 --retries 10 --retry-sleep 2 \
+            -o "captions/%(id)s.auto.%(ext)s" \
+            "https://www.youtube.com/playlist?list=UUbRF6gtkzmbSOtcM6Jq4ANw"
+
+      - name: Show caption counts
+        run: |
+          echo "SRT files downloaded:" $(ls captions/*.srt 2>/dev/null | wc -l)
+
+      # -------- IDs + titles for index --------
       - name: Export playlist JSON (IDs + titles)
-        run: yt-dlp -J --flat-playlist "https://www.youtube.com/@blackoutapp" > playlist.json
+        run: yt-dlp -J --flat-playlist "https://www.youtube.com/playlist?list=UUbRF6gtkzmbSOtcM6Jq4ANw" > playlist.json
 
-      # 3) Build the searchable index from SRTs
+      # -------- build index.json --------
       - name: Build index.json
         env:
           YT_HANDLE: "@blackoutapp"
         run: python scripts/build_index_from_srt.py
 
-      # 4) Configure git and push update safely
+      # -------- push safely --------
       - name: Configure git identity
         run: |
           git config user.name "github-actions[bot]"
