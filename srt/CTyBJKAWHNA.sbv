@@ -1,0 +1,220 @@
+0:00:00.000,0:00:01.166
+We've got a new update out.
+
+0:00:01.166,0:00:04.250
+So let's slow down and talk about it.
+
+0:00:04.625,0:00:08.000
+as always, there's a lot in this update,
+so see the full release notes below.
+
+0:00:08.000,0:00:11.125
+But the big new feature
+that we're going to talk about is
+
+0:00:11.125,0:00:14.458
+you can finally put affect
+speed on faders.
+
+0:00:14.500,0:00:16.333
+So let's take a look at that. Okay.
+
+0:00:16.333,0:00:17.500
+So let's take a look at this
+
+0:00:17.500,0:00:20.666
+brand new feature
+by making an effect on the Helios tube.
+
+0:00:20.833,0:00:22.083
+I'll grab my Helios tube.
+
+0:00:22.083,0:00:25.708
+I'll go offset sell, sell
+only to select just the cells,
+
+0:00:26.000,0:00:28.875
+and then I'll hit record effect.
+
+0:00:28.875,0:00:31.875
+And I'll call this Chase.
+
+0:00:32.750,0:00:36.416
+Okay, so if I hit play on this
+Helios chase, you'll see.
+
+0:00:36.416,0:00:39.000
+We get a chase across this Helios tube.
+
+0:00:39.000,0:00:43.666
+But this is way too slow, and I want to
+dynamically speed it up or slow it down.
+
+0:00:43.708,0:00:44.541
+How do I do that?
+
+0:00:44.541,0:00:48.416
+Well, I can put speed on a fader,
+so I'll go to my fader
+
+0:00:48.416,0:00:51.708
+page now
+and I'll load any of these empty faders.
+
+0:00:51.708,0:00:56.916
+Let's take this one in the middle and
+I'll go to effect and select the effect.
+
+0:00:56.916,0:00:59.750
+In this case
+the chase that I want to slow down.
+
+0:00:59.750,0:01:04.416
+And then I can come over here
+and switch it from master to affect speed.
+
+0:01:04.541,0:01:07.000
+It's worth it to know if I select master.
+
+0:01:07.000,0:01:10.750
+That's going to control both the intensity
+and the speed together.
+
+0:01:11.000,0:01:15.208
+You might want this if you just want to
+shut off and turn on an effect entirely.
+
+0:01:15.416,0:01:18.416
+most instances,
+I just want to control the effect speed.
+
+0:01:18.458,0:01:21.333
+I like using inhibitors
+to control the intensity.
+
+0:01:21.333,0:01:23.791
+you'll see here
+I can set the max speed percentage.
+
+0:01:23.791,0:01:26.708
+I found 500% is great. So we'll keep that.
+
+0:01:26.708,0:01:29.791
+and then the last thing
+I'll do before exiting this menu is add
+
+0:01:29.791,0:01:33.125
+one of our new buttons,
+which is the speed 1 to 1 button.
+
+0:01:33.208,0:01:35.541
+that's going to reset the speed 1 to 1.
+
+0:01:35.541,0:01:38.541
+So now I'll hit save on the button
+and I'll save the menu.
+
+0:01:38.916,0:01:40.416
+And here's our speed fader.
+
+0:01:40.416,0:01:42.125
+You can see my chase stopped.
+
+0:01:42.125,0:01:44.250
+And that's because my faders at zero.
+
+0:01:44.250,0:01:49.291
+Now if I start bringing my fader up,
+you can see the chase starts again.
+
+0:01:49.500,0:01:52.916
+and if I go all the way to 500%, it
+speeds up to the max.
+
+0:01:53.083,0:01:55.708
+Now you can either change the max
+speed percentage
+
+0:01:55.708,0:01:57.583
+or just make your effect faster.
+
+0:01:57.583,0:02:00.583
+So if I go back into my effects menu,
+
+0:02:00.625,0:02:03.250
+I can change the total time to one second.
+
+0:02:03.250,0:02:05.666
+Now this is going a lot faster.
+
+0:02:05.666,0:02:10.416
+So I'm going to hit my speed 1 to 1 button
+and see where my base speed is.
+
+0:02:10.833,0:02:14.250
+You can see that feels pretty nice
+if I bring the fader all the way down.
+
+0:02:14.416,0:02:16.958
+It will stop the effect
+because the speed is zero.
+
+0:02:16.958,0:02:22.208
+That's pretty cool Now just add a Midi
+fader into the mix, and it's a party. We.
+
+0:02:22.333,0:02:25.041
+To see everything that's new in 2.4.6.
+
+0:02:25.041,0:02:27.041
+Check the release notes down below.
+
+0:02:27.041,0:02:30.875
+We have a lot of fun new features
+and fixes like inhibited faders
+
+0:02:30.875,0:02:31.833
+come in as red.
+
+0:02:31.833,0:02:33.958
+There's a lot to love
+and we have a lot more coming.
+
+0:02:33.958,0:02:37.000
+So stay tuned and let me know in
+the comments what you want to see more of.
+
+0:02:37.000,0:02:37.833
+I'll see you next time.
+
+0:09:32.416,0:09:33.958
+Don't put this in the video.
+
+0:09:33.958,0:09:35.083
+Just my cursor.
+
+0:09:35.083,0:09:36.958
+Okay, I'll start that over
+because I fucked up.
+
+0:09:36.958,0:09:40.041
+Fuck. Okay. Okay. Don't use that.
+
+0:09:40.208,0:09:42.250
+Okay.
+
+0:09:42.250,0:09:44.791
+you can see
+I get this chase on my Helios tube.
+
+0:09:44.791,0:09:46.958
+That's way too bright. Jeez.
+
+0:09:46.958,0:09:49.000
+Oh, fuck me.
+
+0:09:49.000,0:09:50.375
+Will slow that down.
+
+0:09:50.375,0:09:52.166
+Now and just start it here.
