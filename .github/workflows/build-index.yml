@@ -29,7 +29,6 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           YOUTUBE_HANDLE: "@blackoutapp"
-          LIMIT: "20"        # TEMP: process first 20 videos; remove later
           WORKERS: "8"
           PRINT_EVERY: "5"
         run: python scripts/build_index_from_api_transcripts.py
