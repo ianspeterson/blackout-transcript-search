@@ -1,0 +1,566 @@
+0:00:00.000,0:00:02.333
+So today I want to use my Cerise and my
+
+0:00:02.333,0:00:04.166
+ART7 Wi-Fi in Blackout.
+
+0:00:04.458,0:00:05.416
+Let's learn about it.
+
+0:00:05.416,0:00:06.541
+So in this video, we're going to talk
+
+0:00:06.541,0:00:07.791
+about using my Cerise
+
+0:00:07.791,0:00:08.916
+connected to my iPad
+
+0:00:08.916,0:00:11.916
+through the USB C cable to transmit CRM X
+
+0:00:11.916,0:00:14.375
+to all my lights, while also having the
+
+0:00:14.375,0:00:17.125
+ART7 connected to my iPad with Wi-Fi
+
+0:00:17.125,0:00:18.625
+to check on my Asteras.
+
+0:00:19.083,0:00:21.000
+These two devices are my favorite combo
+
+0:00:21.000,0:00:21.833
+right now in Blackout.
+
+0:00:22.208,0:00:24.166
+But you can do this with any transmitter
+
+0:00:24.166,0:00:25.375
+that you can hardline
+
+0:00:25.375,0:00:27.458
+via USB C into your iPad.
+
+0:00:27.500,0:00:29.625
+So the Rat Pack AKS, the Rat Pack
+
+0:00:29.625,0:00:31.791
+satellite, really any transmitter with an
+
+0:00:31.791,0:00:33.958
+ethernet port will work like this, too.
+
+0:00:34.250,0:00:35.833
+Before we get started, I just want to say
+
+0:00:35.833,0:00:37.750
+in this video, we're only using the ART7
+
+0:00:37.750,0:00:39.916
+Wi-Fi box for the Astera
+
+0:00:39.916,0:00:40.958
+integration in Blackout.
+
+0:00:41.416,0:00:42.916
+We are not using it as a
+
+0:00:42.916,0:00:44.541
+node in addition to our Cerise.
+
+0:00:44.833,0:00:46.666
+You can use your ART7 as an
+
+0:00:46.666,0:00:48.666
+additional universe, but that requires
+
+0:00:48.750,0:00:49.833
+networking it together
+
+0:00:49.833,0:00:51.166
+with your other transmitter.
+
+0:00:51.166,0:00:51.875
+And I won't be
+
+0:00:51.875,0:00:53.000
+showing that in this video.
+
+0:00:53.333,0:00:54.083
+So without further
+
+0:00:54.083,0:00:55.375
+ado, let's get started.
+
+0:00:55.541,0:00:57.083
+Okay. The first thing I'm going to do is
+
+0:00:57.083,0:00:58.833
+open Safari and go to
+
+0:00:58.833,0:01:00.208
+the IP address of my
+
+0:01:00.208,0:01:01.958
+series. Now you're welcome to keep the
+
+0:01:01.958,0:01:03.208
+default IP address that
+
+0:01:03.208,0:01:04.166
+the Cerise ships with.
+
+0:01:04.291,0:01:06.375
+I found that I get better results using
+
+0:01:06.375,0:01:07.666
+this IP address scheme.
+
+0:01:08.000,0:01:09.041
+If you're not comfortable with
+
+0:01:09.041,0:01:10.125
+networking, you can just
+
+0:01:10.125,0:01:11.833
+leave them alone or you can
+
+0:01:11.833,0:01:13.708
+copy mine. Just note that if you change
+
+0:01:13.708,0:01:15.041
+the IP address of the
+
+0:01:15.041,0:01:16.125
+Cerise, that's going
+
+0:01:16.125,0:01:18.083
+to be the new number that you type into
+
+0:01:18.083,0:01:19.708
+the web browser to get to the Cerise
+
+0:01:19.791,0:01:20.833
+configuration page.
+
+0:01:21.250,0:01:22.833
+I did want to show off this page because
+
+0:01:22.833,0:01:23.500
+it is really
+
+0:01:23.500,0:01:24.708
+important that you change set
+
+0:01:24.833,0:01:27.250
+as default gateway to no. You can do
+
+0:01:27.250,0:01:28.458
+this by clicking the pencil.
+
+0:01:28.916,0:01:30.500
+And this is how you change all of your
+
+0:01:30.500,0:01:32.958
+settings and making sure this is off and
+
+0:01:32.958,0:01:34.041
+then clicking the checkbox.
+
+0:01:34.500,0:01:36.000
+Then the web page will prompt you to
+
+0:01:36.000,0:01:37.291
+reset and you can reset
+
+0:01:37.291,0:01:38.125
+the device from there.
+
+0:01:38.375,0:01:39.916
+The page will also tell you that if you
+
+0:01:39.916,0:01:40.541
+change the IP
+
+0:01:40.541,0:01:41.541
+address, you'll have to type
+
+0:01:41.541,0:01:42.750
+in that IP address to
+
+0:01:42.750,0:01:43.500
+get back to the page.
+
+0:01:43.791,0:01:45.541
+With that done, let's set up our ART7
+
+0:01:45.541,0:01:47.291
+Wi-Fi box, a
+
+0:01:47.291,0:01:48.583
+short press and hold of the
+
+0:01:48.583,0:01:49.833
+power button turns it on.
+
+0:01:50.166,0:01:51.333
+Now let's navigate to the
+
+0:01:51.333,0:01:53.166
+Astera Next app in the Astera page.
+
+0:01:53.333,0:01:54.791
+I'll go manage Bluetooth bridges.
+
+0:01:55.208,0:01:57.291
+I'll hit the plus sign and I'll click
+
+0:01:57.291,0:01:59.125
+this top option for the ART7.
+
+0:01:59.291,0:02:00.500
+You'll see it pop up here
+
+0:02:00.500,0:02:01.708
+and I'll hit tap to bond.
+
+0:02:01.916,0:02:02.708
+You'll notice here it
+
+0:02:02.708,0:02:03.958
+says connected via Bluetooth.
+
+0:02:04.291,0:02:06.291
+When using the Astera app, I always
+
+0:02:06.291,0:02:08.000
+recommend connecting via Bluetooth.
+
+0:02:08.333,0:02:09.250
+That way you can save the
+
+0:02:09.250,0:02:10.750
+Wi-Fi features for Blackout.
+
+0:02:11.125,0:02:12.083
+The other thing I want to
+
+0:02:12.083,0:02:13.958
+note here is my firmware version.
+
+0:02:14.125,0:02:16.166
+You have to be on five point fifteen
+
+0:02:16.166,0:02:18.458
+point one three seven to use the Blackout
+
+0:02:18.500,0:02:20.375
+integration. If you're not on this
+
+0:02:20.375,0:02:21.458
+firmware, check out my
+
+0:02:21.458,0:02:22.250
+Facebook post where I
+
+0:02:22.333,0:02:23.291
+explain how to update.
+
+0:02:23.541,0:02:24.750
+You'll come to this side menu.
+
+0:02:25.333,0:02:28.500
+You'll scroll down to app settings, go to
+
+0:02:28.500,0:02:30.666
+lights background update and press and
+
+0:02:30.666,0:02:33.625
+hold this refresh icon and
+
+0:02:33.625,0:02:35.041
+type in the code Blackout.
+
+0:02:35.708,0:02:37.083
+I've already done this so I can't show
+
+0:02:37.083,0:02:38.125
+you much more than this.
+
+0:02:38.500,0:02:40.875
+But once you hit OK, you'll be prompted
+
+0:02:40.875,0:02:42.583
+to update with a custom firmware.
+
+0:02:42.958,0:02:43.875
+And that is five point
+
+0:02:43.875,0:02:45.166
+fifteen point one three seven.
+
+0:02:45.416,0:02:47.416
+After you've updated the firmware, reboot
+
+0:02:47.416,0:02:49.375
+the box and you can keep going with us.
+
+0:02:49.708,0:02:51.291
+So now that we're on the right firmware,
+
+0:02:51.958,0:02:52.750
+I'm going to hit this
+
+0:02:52.750,0:02:54.083
+arrow to go into the
+
+0:02:54.083,0:02:56.958
+boxes settings or go to Wi-Fi settings
+
+0:02:56.958,0:03:00.500
+and I'll turn access point on and join
+
+0:03:00.541,0:03:03.041
+network off and then I'll click done.
+
+0:03:03.333,0:03:05.250
+At this point, I recommend rebooting the
+
+0:03:05.250,0:03:06.916
+ART7. Press and hold the power button
+
+0:03:07.125,0:03:08.375
+and it'll turn off.
+
+0:03:09.000,0:03:11.250
+Yep. And then short press and hold.
+
+0:03:11.375,0:03:12.250
+It'll turn back on.
+
+0:03:12.708,0:03:14.541
+Now we're all done with the Astera app.
+
+0:03:14.791,0:03:16.625
+Here I am in Blackout and you can see in
+
+0:03:16.625,0:03:18.750
+link status I'm connected via Ethernet.
+
+0:03:19.041,0:03:20.000
+I'll click link status
+
+0:03:20.000,0:03:21.625
+and go to connect to Astera.
+
+0:03:22.375,0:03:24.875
+I'll add a new Astera box and make sure
+
+0:03:24.875,0:03:27.000
+I'm on connect via Wi-Fi access point.
+
+0:03:27.375,0:03:28.000
+Again, this is the
+
+0:03:28.000,0:03:29.166
+beauty of this whole setup.
+
+0:03:29.166,0:03:30.625
+I'm connected to my CRM X
+
+0:03:30.625,0:03:32.500
+transmitter via Ethernet.
+
+0:03:32.791,0:03:33.916
+This USB cable.
+
+0:03:34.125,0:03:35.375
+But I can also connect to
+
+0:03:35.375,0:03:37.416
+my ART7 via its Wi-Fi.
+
+0:03:37.416,0:03:38.833
+So here we'll put in the pairing pin,
+
+0:03:38.833,0:03:39.916
+which you can see on a
+
+0:03:39.916,0:03:40.916
+sticker on the back of
+
+0:03:40.916,0:03:42.833
+your box. Blackout will then prompt you
+
+0:03:42.833,0:03:43.833
+to join the network.
+
+0:03:43.833,0:03:44.916
+I'll click join and it will
+
+0:03:44.916,0:03:46.125
+ask you to pick a radio pin.
+
+0:03:46.500,0:03:47.958
+I'll use four eights and
+
+0:03:47.958,0:03:49.333
+I'll select US Australia.
+
+0:03:49.791,0:03:51.291
+Then I'll hit connect and you can see
+
+0:03:51.291,0:03:53.416
+instantly my ART7 pops up.
+
+0:03:53.625,0:03:54.791
+So let's test this out.
+
+0:03:55.083,0:03:56.500
+I'll go into patch add
+
+0:03:56.500,0:03:58.291
+fixtures, go to the cloud database.
+
+0:03:58.666,0:04:01.458
+I'll search for a Helios tube series.
+
+0:04:01.791,0:04:03.791
+Let's grab a bunch of pixels, do like
+
+0:04:03.791,0:04:06.083
+eight pixels and I'll do something crazy.
+
+0:04:06.083,0:04:07.291
+Like mode 140.
+
+0:04:07.541,0:04:08.375
+We'll patch that in.
+
+0:04:08.583,0:04:09.625
+I'll use my white remote
+
+0:04:09.625,0:04:11.000
+to blue mode my Helios.
+
+0:04:13.416,0:04:13.916
+There it goes.
+
+0:04:14.041,0:04:14.583
+Oh my gosh.
+
+0:04:15.416,0:04:16.500
+At least it's on key side.
+
+0:04:17.666,0:04:19.166
+Now that it's in blue mode, I'll go to
+
+0:04:19.166,0:04:20.750
+link status, connect
+
+0:04:20.750,0:04:22.166
+to a star and I'll hit
+
+0:04:22.166,0:04:23.250
+pair with lights and
+
+0:04:23.250,0:04:24.500
+just like that, it connects.
+
+0:04:24.916,0:04:26.416
+Now in the patch, I'll hit the Astara
+
+0:04:26.416,0:04:27.875
+logo and I'll hit send
+
+0:04:27.875,0:04:29.041
+to send it the data for
+
+0:04:29.041,0:04:29.583
+the patch.
+
+0:04:29.583,0:04:30.500
+I'll hit enter on the
+
+0:04:30.500,0:04:32.208
+light and now it's patched.
+
+0:04:32.666,0:04:36.625
+I'll give it a little test to one at 20.
+
+0:04:38.333,0:04:39.291
+Looks like it works to me.
+
+0:04:39.625,0:04:41.416
+And then as you can see up at the top, I
+
+0:04:41.416,0:04:42.333
+have the battery life.
+
+0:04:42.541,0:04:44.625
+If I click the Astera logo, I can see the
+
+0:04:44.625,0:04:45.500
+exact battery life
+
+0:04:45.500,0:04:46.708
+and I can change any of
+
+0:04:46.708,0:04:47.541
+the settings I want.
+
+0:04:48.250,0:04:48.958
+I can flash it white.
+
+0:04:49.875,0:04:52.541
+I can flash it cyan and I can take back
+
+0:04:52.541,0:04:53.791
+over with DMX control.
+
+0:04:54.166,0:04:55.916
+So as you can see, the ART7 and the
+
+0:04:55.916,0:04:57.375
+Cerise play great together.
+
+0:04:57.708,0:04:59.708
+The only other tip I have for you is the
+
+0:04:59.708,0:05:02.708
+Cerise is really strong and it broadcasts
+
+0:05:02.833,0:05:05.750
+CRMX on 2.4 gigahertz, which is what the
+
+0:05:05.750,0:05:07.375
+ART7 uses for its wifi.
+
+0:05:07.750,0:05:09.416
+So I recommend having them
+
+0:05:09.416,0:05:10.958
+spaced apart a little right now.
+
+0:05:10.958,0:05:12.500
+They're about a foot away from each other
+
+0:05:12.500,0:05:13.708
+and it's working great.
+
+0:05:13.958,0:05:15.791
+So do your own testing, but that's my
+
+0:05:15.791,0:05:17.083
+only other little recommendation.
+
+0:05:17.500,0:05:18.750
+So that's how to set this all up.
+
+0:05:18.958,0:05:20.125
+Let me know in the comments what you want
+
+0:05:20.125,0:05:21.458
+to see more of, and I'll see you next time.
