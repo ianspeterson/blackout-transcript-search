@@ -37,37 +37,38 @@ jobs:
       - name: Prepare dirs
         run: mkdir -p captions public
 
-      - name: Write cookies file
+      - name: Write cookies file (if provided)
+        if: ${{ secrets.YTDLP_COOKIES != '' }}
         run: |
-          # write secret to cookies.txt without printing it
           printf "%s" "${{ secrets.YTDLP_COOKIES }}" > cookies.txt
 
-      # 1) Download YOUR uploaded English captions as SRT
-      - name: Download uploaded SRT captions (with cookies)
+      # 1) Download YOUR uploaded English captions as SRT (manual tracks)
+      - name: Download uploaded SRT captions
         run: |
-          yt-dlp -i --skip-download \
-            --cookies cookies.txt \
+          yt-dlp -i --skip-download --force-ipv4 \
+            ${{ secrets.YTDLP_COOKIES != '' && '--cookies cookies.txt' || '' }} \
             --extractor-args "youtube:player_client=web" \
             --write-sub --sub-langs "en,en-US,en.*" \
             --convert-subs srt --no-overwrites \
+            --sleep-requests 0.2 --retries 10 --retry-sleep 2 \
             -o "captions/%(id)s.%(ext)s" \
             "https://www.youtube.com/@blackoutapp"
 
-      # (optional) include auto captions when no manual SRT is present:
-    name: Download AUTO captions fallback
-    run: |
-      yt-dlp -i --skip-download \
-      --cookies cookies.txt \
-       --extractor-args "youtube:player_client=web" \
-      --write-auto-sub --sub-langs "en,en-US,en.*" \
-           --convert-subs srt --no-overwrites \
-             -o "captions/%(id)s.auto.%(ext)s" \
-     \     "https://www.youtube.com/@blackoutapp"
+      # 1b) OPTIONAL: include auto-captions only when manual doesn't exist
+      - name: Download AUTO captions fallback
+        run: |
+          yt-dlp -i --skip-download --force-ipv4 \
+            ${{ secrets.YTDLP_COOKIES != '' && '--cookies cookies.txt' || '' }} \
+            --extractor-args "youtube:player_client=web" \
+            --write-auto-sub --sub-langs "en,en-US,en.*" \
+            --convert-subs srt --no-overwrites \
+            --sleep-requests 0.2 --retries 10 --retry-sleep 2 \
+            -o "captions/%(id)s.auto.%(ext)s" \
+            "https://www.youtube.com/@blackoutapp"
 
       - name: Show caption counts
         run: |
           echo "SRT files downloaded:" $(ls captions/*.srt 2>/dev/null | wc -l)
-
 
       # 2) Export IDs+titles for mapping
       - name: Export playlist JSON (IDs + titles)
