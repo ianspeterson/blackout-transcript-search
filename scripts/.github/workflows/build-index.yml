@@ -36,17 +36,24 @@ jobs:
 
       - name: Prepare dirs
         run: mkdir -p captions public
-
-      - name: Write cookies file (if provided)
-        if: ${{ secrets.YTDLP_COOKIES != '' }}
+      - name: Write cookies file (required)
         run: |
+          if [ -z "${{ secrets.YTDLP_COOKIES }}" ]; then
+            echo "❌ Missing YTDLP_COOKIES secret"; exit 1
+          fi
           printf "%s" "${{ secrets.YTDLP_COOKIES }}" > cookies.txt
+          BYTES=$(wc -c < cookies.txt || echo 0)
+          if [ "$BYTES" -lt 100 ]; then
+            echo "❌ cookies.txt looks too small ($BYTES bytes). Re-export in Netscape format."; exit 1
+          fi
+          head -n 1 cookies.txt | grep -q 'Netscape' || echo "⚠️  cookies.txt may not be in Netscape format"
 
       # 1) Download YOUR uploaded English captions as SRT (manual tracks)
-      - name: Download uploaded SRT captions
+      - name: Download uploaded SRT captions (with cookies)
         run: |
-          yt-dlp -i --skip-download --force-ipv4 \
-            ${{ secrets.YTDLP_COOKIES != '' && '--cookies cookies.txt' || '' }} \
+          yt-dlp -v -i --skip-download --force-ipv4 \
+            --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" \
+            --cookies cookies.txt \
             --extractor-args "youtube:player_client=web" \
             --write-sub --sub-langs "en,en-US,en.*" \
             --convert-subs srt --no-overwrites \
@@ -57,8 +64,9 @@ jobs:
       # 1b) OPTIONAL: include auto-captions only when manual doesn't exist
       - name: Download AUTO captions fallback
         run: |
-          yt-dlp -i --skip-download --force-ipv4 \
-            ${{ secrets.YTDLP_COOKIES != '' && '--cookies cookies.txt' || '' }} \
+          yt-dlp -v -i --skip-download --force-ipv4 \
+            --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" \
+            --cookies cookies.txt \
             --extractor-args "youtube:player_client=web" \
             --write-auto-sub --sub-langs "en,en-US,en.*" \
             --convert-subs srt --no-overwrites \
