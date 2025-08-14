@@ -1,0 +1,491 @@
+0:00:01.000,0:00:02.875
+Hey look at that. I can control blackout
+
+0:00:02.875,0:00:04.708
+from my phone. You may
+
+0:00:04.708,0:00:06.250
+already be familiar with MIDI
+
+0:00:06.250,0:00:08.458
+control in blackout, but blackout also
+
+0:00:08.458,0:00:10.125
+supports OSC, which stands
+
+0:00:10.125,0:00:11.875
+for open sound control and
+
+0:00:11.958,0:00:14.458
+isn't limited to the 8 bits that MIDI is.
+
+0:00:14.791,0:00:15.708
+Open sound control is
+
+0:00:15.708,0:00:17.333
+awesome because a wide range
+
+0:00:17.333,0:00:19.416
+of hardware and software supports it and
+
+0:00:19.416,0:00:20.375
+it allows for custom
+
+0:00:20.375,0:00:21.666
+messages so the possibilities
+
+0:00:21.875,0:00:24.041
+are endless. In this video I'm going to
+
+0:00:24.041,0:00:25.708
+show you how to set up OSC
+
+0:00:25.708,0:00:27.625
+with an app called Touch OSC.
+
+0:00:27.666,0:00:30.250
+Touch OSC is free on your computer so you
+
+0:00:30.250,0:00:31.375
+can download it there and
+
+0:00:31.375,0:00:32.416
+start playing around with
+
+0:00:32.416,0:00:34.125
+it and follow along with the video, but
+
+0:00:34.125,0:00:34.833
+everything we're going to
+
+0:00:34.833,0:00:36.166
+learn about the connection setup
+
+0:00:36.166,0:00:39.333
+translates to any OSC device or software
+
+0:00:39.333,0:00:40.958
+you're going to use. You
+
+0:00:40.958,0:00:42.250
+can even go crazy and start
+
+0:00:42.250,0:00:44.666
+hooking up game controllers or building
+
+0:00:44.666,0:00:47.000
+your own faders. So the first thing
+
+0:00:47.000,0:00:47.583
+you're going to want
+
+0:00:47.583,0:00:50.291
+to do is check that blackout and your OSC
+
+0:00:50.291,0:00:51.375
+device are on the same
+
+0:00:51.375,0:00:52.916
+network. I can come up here to
+
+0:00:52.916,0:00:55.708
+link status in blackout and I can see my
+
+0:00:55.708,0:00:57.666
+network here and then on my
+
+0:00:57.666,0:01:00.041
+phone I can see that I'm on
+
+0:01:00.041,0:01:02.583
+the same network. I'm on Android so if I
+
+0:01:02.583,0:01:04.083
+click this little wheel I
+
+0:01:04.083,0:01:05.166
+can come down here to view
+
+0:01:05.166,0:01:07.458
+more and see my IP address. This will be
+
+0:01:07.458,0:01:09.000
+useful for later so I'm going to keep
+
+0:01:09.000,0:01:10.000
+this number memorized.
+
+0:01:10.375,0:01:12.666
+Then back in blackout I'm going to
+
+0:01:12.666,0:01:16.583
+connect device and go to the OSC tab. The
+
+0:01:16.583,0:01:17.416
+first thing I'm going
+
+0:01:17.416,0:01:20.250
+to do is click on OSC documentation. If
+
+0:01:20.250,0:01:21.000
+you're connected to the
+
+0:01:21.000,0:01:22.750
+internet you'll be taken to the
+
+0:01:22.750,0:01:25.041
+blackout web page where you can see all
+
+0:01:25.041,0:01:26.500
+of the messages in blackout.
+
+0:01:27.208,0:01:29.583
+I'm going to scroll down to
+
+0:01:29.583,0:01:32.458
+the fader commands and we'll start by
+
+0:01:32.458,0:01:34.458
+controlling the global fader level of
+
+0:01:34.458,0:01:36.083
+fader one. So this is
+
+0:01:36.083,0:01:37.875
+the message that I'll need to put in
+
+0:01:37.875,0:01:40.333
+touch OSC and I can see here in the
+
+0:01:40.333,0:01:41.541
+arguments it's going to be
+
+0:01:41.541,0:01:44.791
+an integer from 0 to 255. So let's see
+
+0:01:44.791,0:01:46.208
+what all of that means. I'm
+
+0:01:46.208,0:01:47.958
+going to open touch OSC on my
+
+0:01:47.958,0:01:49.750
+phone and then I'm going to press and
+
+0:01:49.750,0:01:51.333
+hold in the middle and add
+
+0:01:51.333,0:01:56.833
+a fader. I'll make it a bit
+
+0:01:56.833,0:01:59.083
+bigger here by just dragging it around.
+
+0:01:59.583,0:02:01.166
+With my fader selected I'll
+
+0:02:01.166,0:02:03.333
+hit this bar graph icon and
+
+0:02:03.333,0:02:05.125
+make sure that in the documentary here my
+
+0:02:05.125,0:02:06.166
+fader is still selected
+
+0:02:06.166,0:02:08.541
+and I'll scroll down to where
+
+0:02:08.541,0:02:10.916
+I can see the messages. For now I'll
+
+0:02:10.916,0:02:12.208
+delete the MIDI message out
+
+0:02:12.208,0:02:14.500
+by clicking the X and then I'll
+
+0:02:14.541,0:02:17.583
+tap on OSC. Now in this section where it
+
+0:02:17.583,0:02:18.833
+says address this is
+
+0:02:18.833,0:02:20.333
+where I'm going to put the OSC
+
+0:02:20.375,0:02:23.333
+path from the blackout documents. I'm
+
+0:02:23.333,0:02:24.208
+going to start by pressing
+
+0:02:24.208,0:02:25.666
+holding name here and deleting
+
+0:02:25.666,0:02:27.583
+it by clicking OK then I'm going to touch
+
+0:02:27.583,0:02:29.708
+the slash. In the slash
+
+0:02:29.708,0:02:31.375
+I'll write exactly what was
+
+0:02:31.416,0:02:34.333
+in the blackout page. So I'll do slash
+
+0:02:34.333,0:02:40.875
+BLK slash fader slash global
+
+0:02:40.875,0:02:45.916
+slash now here's where I put
+
+0:02:45.916,0:02:49.583
+the number I'll do fader one slash level
+
+0:02:49.583,0:02:54.500
+and then I'll click enter. Then in
+
+0:02:54.500,0:02:55.750
+arguments you'll see
+
+0:02:55.791,0:02:57.958
+here it says float I'm going to change
+
+0:02:57.958,0:02:59.166
+the conversion to
+
+0:02:59.166,0:03:01.625
+integer and I'll send it from 0
+
+0:03:01.625,0:03:04.041
+to 255 because again that's what the
+
+0:03:04.041,0:03:07.083
+documentation tells us to do. After
+
+0:03:07.083,0:03:08.500
+hitting enter I'm going to
+
+0:03:08.500,0:03:12.166
+come up to link and go into OSC. Now I
+
+0:03:12.166,0:03:13.000
+already have some things
+
+0:03:13.000,0:03:14.625
+configured but I'm going to double
+
+0:03:14.666,0:03:16.958
+check that it's exactly what blackout's
+
+0:03:16.958,0:03:20.041
+expecting. In the host I'm going to put
+
+0:03:20.041,0:03:21.333
+the IP address of my
+
+0:03:21.375,0:03:24.333
+iPad. Once again looking at the blackout
+
+0:03:24.333,0:03:25.791
+page I can see my IP
+
+0:03:25.791,0:03:30.708
+address 192.168.0.2 and then this
+
+0:03:30.708,0:03:32.833
+part's a bit of a brain teaser so up at
+
+0:03:32.833,0:03:34.291
+the top here where it says
+
+0:03:34.291,0:03:36.375
+blackout receive address and
+
+0:03:36.375,0:03:40.333
+port we see that the port is 9003 so
+
+0:03:40.333,0:03:41.625
+that's what I want my send
+
+0:03:41.625,0:03:43.875
+port to be in touch OSC and I'll
+
+0:03:43.916,0:03:48.125
+make sure that's 9003. Then down in
+
+0:03:48.125,0:03:50.166
+blackout this is where it's
+
+0:03:50.166,0:03:52.666
+going to be sending any fader
+
+0:03:52.666,0:03:55.458
+feedback to my touch OSC device so I'm
+
+0:03:55.458,0:03:56.500
+going to change this to the
+
+0:03:56.500,0:03:58.500
+IP address of my phone which
+
+0:03:58.500,0:04:04.416
+was 192.168.0.19 and then I'll want the
+
+0:04:04.416,0:04:06.291
+port to match touch OSC's
+
+0:04:06.291,0:04:09.875
+receive port at 9006 so we'll
+
+0:04:09.916,0:04:12.291
+make sure that's configured in both and
+
+0:04:12.291,0:04:15.166
+then I'll click done. Now
+
+0:04:15.166,0:04:16.875
+back in touch OSC I'll hit these
+
+0:04:16.875,0:04:20.208
+bar graphs I'll close out of link status
+
+0:04:20.208,0:04:22.125
+in blackout and now I'll
+
+0:04:22.125,0:04:23.583
+hit this play button. As
+
+0:04:23.583,0:04:26.000
+I move the fader on my phone you can see
+
+0:04:26.000,0:04:30.083
+it moves in blackout and if
+
+0:04:30.083,0:04:31.375
+I move the fader in blackout
+
+0:04:31.375,0:04:35.041
+you can see touch OSC follows. Now let's
+
+0:04:35.041,0:04:38.041
+add a button give myself
+
+0:04:38.041,0:04:39.250
+some more room on the canvas
+
+0:04:39.416,0:04:42.208
+here and I'll press and hold in the
+
+0:04:42.208,0:04:43.958
+middle of the canvas and add a button.
+
+0:04:46.166,0:04:49.041
+This is going to be the
+
+0:04:49.041,0:04:52.416
+same process I'll hit the bar graph I'll
+
+0:04:52.416,0:04:56.000
+scroll down delete MIDI and
+
+0:04:56.000,0:04:57.541
+come into my button messages
+
+0:04:57.583,0:05:02.208
+and come into the OSC messages I'll
+
+0:05:02.208,0:05:04.583
+delete name by pressing holding I'll come
+
+0:05:04.583,0:05:06.333
+to the slash and now
+
+0:05:06.375,0:05:08.000
+I'll navigate back to the OSC
+
+0:05:08.000,0:05:11.166
+documentation and let's add one of the
+
+0:05:11.166,0:05:12.958
+action buttons so we'll do
+
+0:05:13.000,0:05:22.500
+slash BLK slash fader slash global slash
+
+0:05:22.500,0:05:31.083
+one slash key underscore one
+
+0:05:31.083,0:05:35.125
+and I'll hit enter. I'll hit the
+
+0:05:35.125,0:05:37.333
+X to check the arguments and here we can
+
+0:05:37.333,0:05:38.750
+see it already matches it's
+
+0:05:38.750,0:05:40.416
+expecting a float of 0 or 1.
+
+0:05:40.541,0:05:42.416
+I'll hit the bar graphs to get out of
+
+0:05:42.416,0:05:44.333
+this menu and then I'll hit
+
+0:05:44.333,0:05:46.875
+play again. I'll navigate back
+
+0:05:46.875,0:05:48.291
+to blackout and since we're already
+
+0:05:48.291,0:05:50.791
+linked up I can see as I hit
+
+0:05:50.791,0:05:52.583
+the button the toggle works
+
+0:05:52.583,0:05:56.000
+and as I move the fader the fader works.
+
+0:05:56.666,0:05:57.708
+So that was a super brief
+
+0:05:57.708,0:05:59.458
+overview of how to set up OSC
+
+0:05:59.500,0:06:01.583
+using touch OSC but the process is the
+
+0:06:01.583,0:06:03.083
+exact same for any OSC
+
+0:06:03.083,0:06:05.083
+device. You match IP addresses and
+
+0:06:05.333,0:06:06.875
+ports and you give it the arguments
+
+0:06:06.875,0:06:09.125
+blackout is expecting. Take a look at the
+
+0:06:09.125,0:06:10.208
+full OSC documentation
+
+0:06:10.500,0:06:12.958
+on our website you can map OSC to any
+
+0:06:12.958,0:06:15.500
+control and blackout it's awesome you're
+
+0:06:15.500,0:06:16.375
+gonna love it let me
+
+0:06:16.375,0:06:17.625
+know in the comments what you want to see
+
+0:06:17.625,0:06:18.875
+more of and I'll see you next time.

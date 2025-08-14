@@ -1,0 +1,704 @@
+0:00:00.000,0:00:01.625
+In this video, I'm going to show you how
+
+0:00:01.625,0:00:02.333
+to make custom
+
+0:00:02.333,0:00:04.000
+multi-cell fixture profiles.
+
+0:00:04.333,0:00:06.000
+Hey everyone, today I'm launching a new
+
+0:00:06.000,0:00:07.250
+series all about making
+
+0:00:07.250,0:00:09.083
+custom profiles in Blackout.
+
+0:00:09.291,0:00:10.750
+If you've been using Blackout for any
+
+0:00:10.750,0:00:11.708
+amount of time, you know
+
+0:00:11.708,0:00:13.083
+that part of what makes Blackout
+
+0:00:13.125,0:00:15.041
+special as a lighting console is our
+
+0:00:15.041,0:00:16.291
+fixture database. We
+
+0:00:16.291,0:00:17.833
+have one of the best fixture
+
+0:00:17.833,0:00:19.750
+databases in the industry, and that's
+
+0:00:19.750,0:00:21.125
+because our profiles are
+
+0:00:21.125,0:00:22.625
+human-made and human-verified.
+
+0:00:22.958,0:00:24.791
+As you can see in our fixture database,
+
+0:00:24.791,0:00:26.125
+we have these green tags
+
+0:00:26.125,0:00:27.666
+next to all the profiles that
+
+0:00:27.666,0:00:30.541
+have been human-verified to work. And we
+
+0:00:30.541,0:00:31.833
+go a step further and use
+
+0:00:31.833,0:00:33.291
+these blue "prefer" tags
+
+0:00:33.500,0:00:35.375
+to tell you that these are profiles that
+
+0:00:35.375,0:00:37.125
+we recommend using for your sets.
+
+0:00:37.625,0:00:39.750
+Now this video is about making a custom
+
+0:00:39.750,0:00:41.333
+profile for yourself, but
+
+0:00:41.333,0:00:42.250
+I'm bringing up our fixture
+
+0:00:42.333,0:00:44.375
+database because one of the best things
+
+0:00:44.375,0:00:45.583
+you can do to set yourself
+
+0:00:45.583,0:00:47.041
+up for success if you have a
+
+0:00:47.041,0:00:49.166
+light that we don't have a profile for is
+
+0:00:49.166,0:00:51.541
+let us know. Use the help center and
+
+0:00:51.541,0:00:52.458
+request a new fixture
+
+0:00:52.666,0:00:54.541
+and we will have it in there very
+
+0:00:54.541,0:00:55.875
+quickly. But without further
+
+0:00:55.875,0:00:57.583
+ado, let's get into making our
+
+0:00:57.583,0:01:00.333
+own custom multi-cell fixture profile. As
+
+0:01:00.333,0:01:01.333
+a quick refresher, a
+
+0:01:01.333,0:01:03.166
+multi-cell profile is a profile that
+
+0:01:03.166,0:01:05.708
+contains multiple cells which are
+
+0:01:05.708,0:01:07.708
+essentially separate units within the
+
+0:01:07.708,0:01:08.666
+same profile that you
+
+0:01:08.666,0:01:11.125
+can control individually. Commonly, this
+
+0:01:11.125,0:01:12.458
+is used for pixels in a
+
+0:01:12.458,0:01:13.916
+unit like an aesterotitan tube.
+
+0:01:14.416,0:01:16.291
+But the first example we'll look at is a
+
+0:01:16.291,0:01:17.833
+super basic six-channel
+
+0:01:17.833,0:01:19.416
+dimmer that you want to be
+
+0:01:19.458,0:01:21.833
+tied into all one fixture. The example
+
+0:01:21.833,0:01:23.000
+that I think makes the
+
+0:01:23.000,0:01:25.041
+most sense is six space lights
+
+0:01:25.125,0:01:27.500
+overhead into a six-channel dimmer. So
+
+0:01:27.500,0:01:28.750
+basically we have six lights
+
+0:01:28.750,0:01:30.000
+overhead that we're probably
+
+0:01:30.000,0:01:32.083
+controlling altogether most of the time,
+
+0:01:32.083,0:01:33.375
+but there might be moments
+
+0:01:33.375,0:01:34.375
+where we want to dim them
+
+0:01:34.375,0:01:36.208
+individually. So making a profile for
+
+0:01:36.208,0:01:37.791
+this makes a lot of sense. So
+
+0:01:37.791,0:01:38.833
+let's take a look. We'll start
+
+0:01:38.833,0:01:42.208
+off by navigating to the patch tab and
+
+0:01:42.208,0:01:44.166
+going to add fixtures. And
+
+0:01:44.166,0:01:45.583
+here we'll now create new.
+
+0:01:46.541,0:01:51.416
+We can call this "6-by dimmer" and for
+
+0:01:51.416,0:01:52.916
+the mode we'll put 8-bit
+
+0:01:52.916,0:01:54.333
+because there are 8-bit dimmers
+
+0:01:55.375,0:01:58.833
+and 6-channel. And this
+
+0:01:58.833,0:02:04.916
+will be "8-bit 6-cell dimmer".
+
+0:02:07.541,0:02:09.166
+And we'll change the DMX footprint to be
+
+0:02:09.166,0:02:11.791
+6 and save. Now we're in
+
+0:02:11.791,0:02:12.625
+the fixture editor and the
+
+0:02:12.708,0:02:14.250
+first thing I'm going to do is actually
+
+0:02:14.250,0:02:15.625
+close out of here because
+
+0:02:15.625,0:02:17.041
+what I need to do is actually
+
+0:02:17.125,0:02:19.916
+change all of my modules to cells. Okay,
+
+0:02:19.916,0:02:21.250
+before we go any further, let's think
+
+0:02:21.250,0:02:22.125
+about this for a second.
+
+0:02:22.416,0:02:24.250
+We have a dimmer box with six channels
+
+0:02:24.250,0:02:26.166
+and each of those channels gets an
+
+0:02:26.166,0:02:27.333
+address. There's no master
+
+0:02:27.333,0:02:29.041
+channel that controls all of them, so we
+
+0:02:29.041,0:02:30.250
+need to tell blackout to
+
+0:02:30.250,0:02:32.000
+create that for us. Because when
+
+0:02:32.000,0:02:33.500
+you enter the address, that's just
+
+0:02:33.500,0:02:34.875
+controlling the first channel on the
+
+0:02:34.875,0:02:36.000
+dimmer. So let's say you put
+
+0:02:36.000,0:02:37.833
+an address 1, then address 1 is
+
+0:02:37.833,0:02:39.791
+controlling dimmer 1, address 2 is
+
+0:02:39.791,0:02:40.708
+controlling dimmer 2,
+
+0:02:41.208,0:02:43.375
+address 3 is controlling dimmer 3, and so
+
+0:02:43.375,0:02:44.416
+on and so forth, all the
+
+0:02:44.416,0:02:46.000
+way to 6. There's no address
+
+0:02:46.000,0:02:47.666
+anywhere in there that controls all of
+
+0:02:47.666,0:02:48.458
+them. So when you're
+
+0:02:48.458,0:02:50.500
+building a profile, you only define
+
+0:02:50.625,0:02:53.291
+actual parameters that your fixture has.
+
+0:02:53.583,0:02:54.416
+So I know that's a bit
+
+0:02:54.416,0:02:55.875
+confusing, so let me show you what I
+
+0:02:55.875,0:02:57.916
+mean. Here we have a head cell, but
+
+0:02:57.916,0:02:58.916
+blackout is going to
+
+0:02:58.916,0:03:00.583
+automatically create the head for us.
+
+0:03:00.916,0:03:02.708
+So we're going to tap the pencil here and
+
+0:03:02.708,0:03:04.541
+change this to a cell and
+
+0:03:04.541,0:03:06.458
+we'll relabel it "cell". Now we
+
+0:03:06.500,0:03:08.041
+can add our parameter, which is just
+
+0:03:08.041,0:03:10.083
+intensity. I'm hitting new channel right
+
+0:03:10.083,0:03:11.375
+here and I'm searching
+
+0:03:11.458,0:03:13.375
+for intensity. I can use this filter,
+
+0:03:13.750,0:03:15.000
+scroll down until I see
+
+0:03:15.000,0:03:16.791
+intensity and all the defaults here
+
+0:03:16.791,0:03:20.166
+are fine. Beautiful. Now we just have to
+
+0:03:20.166,0:03:21.166
+create five more modules.
+
+0:03:21.500,0:03:23.041
+I'll hit new module, I'll come
+
+0:03:23.041,0:03:25.166
+up to this list and select our cell and
+
+0:03:25.166,0:03:27.083
+then make sure I switch it to cell and
+
+0:03:27.083,0:03:28.875
+hit save. And I'll do
+
+0:03:28.916,0:03:31.916
+the same thing until I have six. Cell,
+
+0:03:32.041,0:03:33.333
+switch it to cell, save.
+
+0:03:36.041,0:03:42.250
+Okay, so now I have six cells that
+
+0:03:42.250,0:03:44.000
+all have their own intensity parameter.
+
+0:03:44.208,0:03:45.541
+All I have to do now is hit save and
+
+0:03:45.541,0:03:46.916
+patch it in. So I'll
+
+0:03:46.916,0:03:50.041
+hit save, hit patch. We'll keep the
+
+0:03:50.041,0:03:52.708
+defaults for now just to test it. Now if
+
+0:03:52.708,0:03:53.625
+I go to my fixture tab,
+
+0:03:54.041,0:03:57.333
+there we go. In the head, if I bring up
+
+0:03:57.333,0:03:59.291
+the intensity, it brings up all of them,
+
+0:03:59.875,0:04:02.333
+but I can clear out and then select just
+
+0:04:02.333,0:04:04.583
+one of them and bring that up and down.
+
+0:04:09.125,0:04:11.250
+Then I can grab the head and make all of
+
+0:04:11.250,0:04:14.000
+them full. I can grab the
+
+0:04:14.000,0:04:17.750
+head and go offset cells only
+
+0:04:18.708,0:04:22.000
+even and just turn the evens off. So
+
+0:04:22.000,0:04:23.083
+let's do one more together.
+
+0:04:23.083,0:04:24.500
+That's a very common fixture.
+
+0:04:24.916,0:04:27.083
+RGB pixel tape. The problem with RGB
+
+0:04:27.083,0:04:28.875
+pixel tape is each pixel
+
+0:04:28.875,0:04:30.416
+just has three parameters,
+
+0:04:30.416,0:04:32.583
+red, green, blue, there's no dimmer. So
+
+0:04:32.583,0:04:34.125
+it's similar. We have to
+
+0:04:34.125,0:04:35.583
+tell blackout to create a
+
+0:04:35.583,0:04:38.291
+dimmer to dim each channel using those
+
+0:04:38.291,0:04:40.500
+red, green, blue channels and create a
+
+0:04:40.500,0:04:41.416
+master dimmer for the
+
+0:04:41.416,0:04:43.125
+whole thing. So let's take a look at
+
+0:04:43.125,0:04:45.083
+that. Let's say we're doing three pixel
+
+0:04:45.083,0:04:46.541
+tape. We'll go to add
+
+0:04:46.625,0:04:50.666
+fixtures and create new and we'll call
+
+0:04:50.666,0:04:54.666
+this three pixel RGB
+
+0:04:54.666,0:04:59.333
+tape. We'll say RGB a bit.
+
+0:05:00.541,0:05:01.708
+You can look at some of our other
+
+0:05:01.708,0:05:03.000
+profiles to see what our naming
+
+0:05:03.000,0:05:04.791
+conventions are. And so I have
+
+0:05:04.791,0:05:07.291
+red, green, blue over three pixels. So
+
+0:05:07.291,0:05:09.041
+that will be a nine channel
+
+0:05:09.041,0:05:11.583
+footprint. We'll save that.
+
+0:05:12.083,0:05:15.125
+And I'll do the same thing by starting
+
+0:05:15.125,0:05:16.041
+off and turning this
+
+0:05:16.041,0:05:17.625
+into a cell. Because again,
+
+0:05:17.916,0:05:20.291
+address one on this pixel tape is red of
+
+0:05:20.291,0:05:21.666
+the first cell of the first
+
+0:05:21.666,0:05:24.000
+pixel address two is green of
+
+0:05:24.000,0:05:26.166
+the first cell. And then address three is
+
+0:05:26.166,0:05:27.125
+blue of the first cell.
+
+0:05:27.541,0:05:29.416
+And then address four is red
+
+0:05:29.416,0:05:31.250
+of the second cell and there are no
+
+0:05:31.250,0:05:32.666
+dimmers. So blackout will
+
+0:05:32.666,0:05:33.958
+just create those for us.
+
+0:05:34.250,0:05:37.500
+So we'll switch this to cell and I'll
+
+0:05:37.500,0:05:39.250
+call it pixel and save.
+
+0:05:39.541,0:05:44.125
+And save. And I'll do new channel select
+
+0:05:44.125,0:05:46.666
+parameter and I'll type in red.
+
+0:05:48.791,0:05:52.291
+Find red, save all the defaults for red
+
+0:05:52.291,0:05:54.333
+are perfect. So let's
+
+0:05:54.333,0:05:56.291
+save that new channel.
+
+0:05:57.291,0:06:03.875
+We'll search for blue. New
+
+0:06:03.875,0:06:08.291
+channel. I'll search for green.
+
+0:06:14.625,0:06:16.833
+And save. And this is our first pixel
+
+0:06:16.833,0:06:19.125
+done. So now we'll do
+
+0:06:19.125,0:06:20.125
+the same thing new module.
+
+0:06:21.125,0:06:24.291
+And I'll select the pixel. Make sure it's
+
+0:06:24.291,0:06:27.250
+a cell and save. And you can
+
+0:06:27.250,0:06:28.541
+see that starting at address
+
+0:06:28.541,0:06:30.625
+four. And then I'll do it one more time.
+
+0:06:31.083,0:06:32.166
+Select a module pixel,
+
+0:06:33.291,0:06:35.083
+change it to a cell and save.
+
+0:06:36.833,0:06:38.916
+So now let's patch this profile in and
+
+0:06:38.916,0:06:40.875
+take a look. I'll save it.
+
+0:06:45.208,0:06:45.750
+I'll patch it.
+
+0:06:51.166,0:06:52.625
+Just for visibility, I'll change the
+
+0:06:52.625,0:06:57.208
+color here to a red. So
+
+0:06:57.208,0:06:58.458
+now I can grab my fixture
+
+0:06:59.208,0:07:02.833
+and start dimming it up. And you can see
+
+0:07:02.833,0:07:04.833
+blackout built us a virtual dimmer.
+
+0:07:05.750,0:07:08.333
+And if I go into table view, I can see
+
+0:07:08.333,0:07:09.541
+what blackout's actually doing.
+
+0:07:13.625,0:07:15.291
+Blackout has just turned the red channel
+
+0:07:15.291,0:07:16.958
+on. If I saturated down,
+
+0:07:21.208,0:07:22.666
+we get all the channels at full because
+
+0:07:22.666,0:07:24.875
+that's white. And as I dim it down,
+
+0:07:25.125,0:07:27.500
+it dims the virtual dimmer. But if I
+
+0:07:27.500,0:07:31.041
+switch to my output value view state, I
+
+0:07:31.041,0:07:32.125
+can see that as I dim
+
+0:07:32.125,0:07:34.291
+down, this is what blackout is actually
+
+0:07:34.291,0:07:36.083
+doing. It's dimming down
+
+0:07:36.083,0:07:38.458
+the color channels. So that's
+
+0:07:38.458,0:07:40.500
+what a virtual dimmer does. So here I
+
+0:07:40.500,0:07:41.291
+have some pixel tape
+
+0:07:41.291,0:07:44.000
+connected to a DMX decoder. And if I
+
+0:07:44.000,0:07:46.000
+bring my virtual dimmer up, you can see
+
+0:07:46.000,0:07:47.166
+this whole section glows,
+
+0:07:47.166,0:07:48.000
+these are my three pixels.
+
+0:07:48.500,0:07:51.708
+And I can come in here and turn my two
+
+0:07:51.708,0:07:53.333
+end pixels off and just
+
+0:07:53.333,0:07:55.041
+get these on this tape.
+
+0:07:55.333,0:07:58.333
+One pixel is three diodes, and then I can
+
+0:07:58.333,0:07:59.375
+turn the second one on.
+
+0:08:00.083,0:08:01.250
+And then I can come in here,
+
+0:08:01.583,0:08:04.250
+saturate them up, move them around the
+
+0:08:04.250,0:08:07.000
+color wheel. And you can see it works
+
+0:08:07.000,0:08:08.125
+perfectly. So now I can
+
+0:08:08.125,0:08:09.750
+just tap the fixture, grab the whole
+
+0:08:09.750,0:08:12.500
+thing. Look at that, put them at full,
+
+0:08:13.541,0:08:14.375
+make them all the same
+
+0:08:14.500,0:08:19.541
+color. And there you go. That's how to
+
+0:08:19.541,0:08:20.958
+make a custom profile for
+
+0:08:20.958,0:08:22.791
+multi-cell units. Next in this
+
+0:08:22.791,0:08:24.708
+series, I'll be taking a look at moving
+
+0:08:24.708,0:08:26.000
+lights and more complex
+
+0:08:26.000,0:08:27.500
+fixtures. But let me know in the
+
+0:08:27.500,0:08:29.000
+comments what you want to see more of.
+
+0:08:29.333,0:08:30.500
+And of course, if you have
+
+0:08:30.500,0:08:31.583
+a fixture that you're unsure
+
+0:08:31.583,0:08:33.541
+about, let us know in the help center and
+
+0:08:33.541,0:08:35.125
+we'll get it in there for you. Okay,
+
+0:08:35.291,0:08:36.333
+that's it. See you next time.
