@@ -1,11 +1,10 @@
-# builds public/index.json from SRTs downloaded into captions/
+# scripts/build_index_from_srt.py
 import json, os, glob, time
 import srt
 
 CHANNEL_HANDLE = os.getenv("YT_HANDLE", "@blackoutapp")
 
 def load_titles():
-    # created by the Action with: yt-dlp -J --flat-playlist <channel> > playlist.json
     titles = {}
     try:
         with open("playlist.json", "r", encoding="utf-8") as f:
@@ -19,14 +18,31 @@ def load_titles():
         pass
     return titles
 
+def pick_caption_files():
+    """Return dict video_id -> chosen srt path (prefer manual over auto)."""
+    paths = glob.glob("captions/*.srt")
+    manual = {}
+    auto = {}
+    for p in paths:
+        base = os.path.basename(p)
+        parts = base.split(".")
+        vid = parts[0]
+        is_auto = len(parts) >= 3 and parts[1] == "auto"  # abc123.auto.srt
+        if is_auto:
+            auto[vid] = p
+        else:
+            manual[vid] = p
+    chosen = {}
+    vids = set(list(auto.keys()) + list(manual.keys()))
+    for vid in vids:
+        chosen[vid] = manual.get(vid, auto.get(vid))
+    return chosen
+
 def main():
     titles = load_titles()
+    chosen = pick_caption_files()
     segments = []
-    have = set()
-    for path in sorted(glob.glob("captions/*.srt")):
-        base = os.path.basename(path)              # e.g. abc123.en.srt
-        vid = base.split(".")[0]
-        have.add(vid)
+    for vid, path in sorted(chosen.items()):
         with open(path, "r", encoding="utf-8", errors="ignore") as f:
             subs = list(srt.parse(f.read()))
         for sub in subs:
@@ -39,8 +55,7 @@ def main():
                     "text": text,
                     "norm": text.lower(),
                 })
-
-    videos = [{"id": v, "title": titles.get(v, v), "url": f"https://youtu.be/{v}"} for v in sorted(have)]
+    videos = [{"id": v, "title": titles.get(v, v), "url": f"https://youtu.be/{v}"} for v in sorted(chosen)]
     os.makedirs("public", exist_ok=True)
     with open("public/index.json", "w", encoding="utf-8") as f:
         json.dump({
